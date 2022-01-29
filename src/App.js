@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./Statics/scss/App.scss";
+import "./Statics/scss/App.scss";
+import "./Statics/scss/progressLoader.scss";
+import Homepage from "./Webpages/Homepage";
+import Navbar from "./Components/Navbar";
+import { Paper } from "@mui/material";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import getColorTheme from "./Components/getColorTheme";
 
 function App() {
+  const darkModeTheme = createTheme(getColorTheme("dark"));
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThemeProvider theme={darkModeTheme}>
+        <Paper elevation={0}>
+          <Navbar />
+          <Homepage />
+        </Paper>
+      </ThemeProvider>
     </div>
   );
 }

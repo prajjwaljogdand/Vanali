@@ -1,0 +1,185 @@
+
+@keyframes load{0%{stroke-dashoffset:0}}
+.progress {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+   width: 100%;
+    &>li {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        font-weight:600;
+        margin: 2rem;
+        &:before {
+            content: attr(data-name);
+            position: absolute;
+            width: 100%;
+            top: 5.7rem;
+            font-weight:400;
+        }
+        &:after {
+            content: attr(data-percent);
+            position: absolute;
+            width: 100%;
+            top: 2.7rem;
+            left: 0;
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+    svg {
+        width: 10rem;
+        height: 10rem;
+        &:nth-child(2) {
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: rotate(90deg);
+        }
+        &:nth-child(2) path {
+            fill: none;
+            stroke-width: 20;
+            stroke-dasharray: 629;
+            stroke: #373D45;
+            opacity:.9;
+            animation: load 2s;
+        }
+    }
+}
+
+.center{
+    text-align: center !important;
+}
+.left{
+    text-align: left !important;
+    position: absolute;
+    bottom: -5rem;
+}
+.right{
+    text-align: right !important;
+    position: absolute;
+    right: 1rem;
+    flex-direction: row-reverse;
+}
+
+.progress-temp {
+    
+    display: flex;
+
+    padding: 0;
+
+    &>li {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        font-weight:600;
+        margin: 0.5rem 1rem;
+        margin-bottom: 0;
+        &:before {
+            content: attr(data-name);
+            position: absolute;
+            width: 100%;
+            top: 5.7rem;
+            font-weight:400;
+        }
+        &:after {
+            content: attr(data-percent);
+            position: absolute;
+            width: 100%;
+            top: 2.7rem;
+            left: 0;
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+    svg {
+        width: 10rem;
+        height: 10rem;
+        &:nth-child(2) {
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: rotate(90deg);
+        }
+        &:nth-child(2) path {
+            fill: none;
+            stroke-width: 20;
+            stroke-dasharray: 629;
+            stroke: #373D45;
+            opacity:.9;
+            animation: load 2s;
+        }
+    }
+}
+
+
+
+.progress-temp-mini {
+    position: absolute;
+    display: flex;
+    padding: 0;
+    bottom: -5rem;
+    right: 2.5rem;
+    &>li {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        font-weight:600;
+        margin: 0.1rem 1rem;
+        &:before {
+            content: attr(data-name);
+            position: absolute;
+            width: 100%;
+            top: 4rem;
+            font-size: 0.8rem;
+            font-weight:400;
+        }
+        &:after {
+            content: attr(data-percent);
+            position: absolute;
+            font-weight:400;
+            width: 100%;
+            top: 2rem;
+            left: 0;
+            font-size: 1.4rem;
+            text-align: center;
+        }
+    }
+    svg {
+        width: 7rem;
+        height: 7rem;
+        &:nth-child(2) {
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: rotate(90deg);
+        }
+        &:nth-child(2) path {
+            fill: none;
+            stroke-width: 20;
+            stroke-dasharray: 629;
+            stroke: #373D45;
+            opacity:.9;
+            animation: load 2s;
+        }
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .progress-temp-mini {
+      display: inline-block;
+      bottom: 0;
+     text-align: right;
+     width :  100%;
+    }
+    .container{
+        height: auto !important;
+    }
+  }
+
+  .parameter-label{
+      padding-left: 15px;
+      padding-bottom: 8px;
+  }
