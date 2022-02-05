@@ -15,9 +15,9 @@ const CoolentLevel = (props) => {
             top: "0.5rem",
           }}
         />{" "}
-        12L
+        {props.coolant}L
       </Typography>
-      <ProgressBarLinear percent={70} color="secondary" />
+      <ProgressBarLinear percent={props.percentage} color="secondary" />
       <Typography variant="body2" className="parameter-label">
         Coolent Level
       </Typography>

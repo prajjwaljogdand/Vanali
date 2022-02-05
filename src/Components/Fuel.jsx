@@ -14,9 +14,9 @@ const Fuel = (props) => {
             top: "0.5rem",
           }}
         />{" "}
-        10L
+        {props.fuel}L
       </Typography>
-      <ProgressBarLinear percent={30} color="error" />
+      <ProgressBarLinear percent={props.percentage} color="error" />
       <Typography variant="body2" className="parameter-label">
         Fuel Level
       </Typography>

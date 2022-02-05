@@ -4,7 +4,7 @@ import PressureIcon from "@mui/icons-material/Speed";
 
 
 const TyrePressure = (props) => {
-  let color = "secondary";
+  let color = "success";
   if (props.value < 25) {
     color = "error";
   } else if (props.value < 32) {
