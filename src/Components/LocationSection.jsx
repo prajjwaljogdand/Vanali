@@ -7,7 +7,7 @@ const Location = (props) => {
     <Paper
       elevation={6}
       className="container"
-      sx={{ maxWidth: 400, height: 300 }}
+      sx={{  }}
     >
       <Grid container spacing={1}>
         <Grid item xs={12} sm={6}>
