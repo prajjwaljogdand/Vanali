@@ -24,7 +24,7 @@ const Info = (props) => {
 
 const UserDetails = (props) => {
   return (
-    <Paper elevation={6} className="container" sx={{ maxWidth: 400 }}>
+    <Paper elevation={6} className="container">
       <Info text={props.ownerName} label="Owner Name"></Info>
       <Info text={props.registrationNo} label="Registration No."></Info>
       <Info text={props.chassisNo} label="Chasi No."></Info>

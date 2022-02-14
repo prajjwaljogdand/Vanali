@@ -7,12 +7,12 @@ const UserDetails = (props) => {
     <Paper
       elevation={6}
       className="container"
-      sx={{ maxWidth: 400, minHeight: 430 }}
+      sx={{ minHeight: 430 }}
     >
       <ProgressBar percent="40"></ProgressBar>
       <Paper
         elevation={1}
-        sx={{ maxWidth: 400, maxHeight: 200, overflow: "auto" }}
+        sx={{  maxHeight: 200, overflow: "auto" }}
       >
         <AlertAccordion />
         <AlertAccordion />

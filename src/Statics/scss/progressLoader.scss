@@ -167,19 +167,111 @@
     }
 }
 
-@media only screen and (max-width: 390px) {
-    .progress-temp-mini {
-      display: inline-block;
-      bottom: 0;
-     text-align: right;
-     width :  100%;
-    }
-    .container{
-        height: auto !important;
-    }
-  }
+
 
   .parameter-label{
       padding-left: 15px;
       padding-bottom: 8px;
+  }
+
+  @media only screen and (max-width: 1200px) {
+
+    .progress-temp-mini {
+    
+        bottom :  -24rem !important;
+        right:1rem !important;
+      }
+
+    .left{
+        text-align: left !important;
+        position: absolute;
+        bottom :  -25rem;
+    }
+    .right{
+        text-align: right !important;
+        position: absolute;
+        right: 10rem;
+        bottom :  -25rem;
+        flex-direction: row-reverse;
+    }
+    
+  }
+
+  @media only screen and (max-width: 1070px) {
+    .right{
+        text-align: right !important;
+        position: absolute;
+        right: 9rem;
+        bottom :  -25rem;
+        flex-direction: row-reverse;
+    }
+    
+  }
+  @media only screen and (max-width: 1000px) {
+    .progress-temp-mini {
+    
+        bottom :  -30rem !important;
+        right:1rem !important;
+      }
+
+    .left{
+        text-align: left !important;
+        bottom :  -30rem;
+        position: absolute;
+    }
+    .right{
+        text-align: right !important;
+        position: absolute;
+        right: 7rem;
+        bottom :  -23rem;
+        flex-direction: row-reverse;
+    }
+    
+  }
+
+  @media only screen and (max-width: 900px) {
+
+    
+
+   .progress-temp-mini {
+    position: relative;
+        bottom :  15rem !important;
+        right:1rem !important;
+      }
+
+    .left{
+        text-align: left !important;
+        bottom :  0rem;
+        position: relative;
+    }
+    .right{
+        text-align: right !important;
+        position: relative;
+        right: 7rem;
+        bottom :  0rem;
+        flex-direction: row-reverse;
+    }
+
+    .container{
+        height: auto !important ;
+        min-height: 350px; 
+       
+  }
+
+  .container-2{
+    height: 400px !important ;
+   
+   }
+    
+
+  }
+
+  @media only screen and (max-width: 500px) {
+
+
+    .container-2{
+        height: auto !important ;
+       
+       }
+
   }
