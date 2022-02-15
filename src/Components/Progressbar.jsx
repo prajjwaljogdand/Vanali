@@ -2,21 +2,20 @@ const ProgressBar = (props) => {
   const percentage = 629;
 
   let color, color2;
-  let health = "Good Health";
+  let health = "Issues";
 
-  if (props.percent > 50) {
+  if (props.percent === 0) {
     color = "#01DEA7";
     color2 = "#00A3FF";
   } else {
     color2 = "#C82E0D";
     color = "#F5D779";
-    health = "Bad Health";
   }
 
   return (
     <>
       <div className="progress">
-        <li data-name={health} data-percent={props.percent + "%"}>
+        <li data-name={health} data-percent={props.percent}>
           <svg viewBox="-10 -10 220 220">
             <g fill="none" stroke-width="20" transform="translate(100,100)">
               <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)" />

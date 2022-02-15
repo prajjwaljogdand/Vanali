@@ -7,7 +7,16 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import Alert from "@mui/material/Alert";
 
-export default function AlertAccordion() {
+export default function AlertAccordion({message,threat}) {
+  let title="Danger";
+  if(threat === "warning.dark"){
+    threat = "warning"
+    title="Attention Required"
+  }
+  else if(threat==="warning.light"){
+    threat = "warning"
+    title="Non Severe Issue"
+  }
   return (
     <div>
       <Accordion>
@@ -17,13 +26,10 @@ export default function AlertAccordion() {
           id="panel1a-header"
         >
        
-          <Alert variant="outlined" severity="error">This is an error alert — check it out!</Alert>
+          <Alert variant="outlined" severity={threat}>{title}</Alert>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
+          {message}
         </AccordionDetails>
       </Accordion>
     </div>
