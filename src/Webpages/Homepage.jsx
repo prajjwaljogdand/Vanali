@@ -88,6 +88,7 @@ const Homepage = () => {
       <Grid item xs={12} md={6}>
         <div style={{ width: "100%", height: "100%", minHeight: 300 }}>
           <iframe
+          title="Car"
             height="100%"
             width="100%"
             frameborder="0"

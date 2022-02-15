@@ -11,10 +11,10 @@ const Location = (props) => {
     >
       <Grid container spacing={1}>
         <Grid item xs={12} sm={6}>
-          <Info text="JESSICA MARK" label="Latitude" />
+          <Info text="18.516726" label="Latitude" />
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Info text="JESSICA MARK" label="Longitude" />
+          <Info text="73.856255" label="Longitude" />
         </Grid>
         <Grid item xs={12} sm={12}>
           <SimpleMap />
