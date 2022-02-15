@@ -17,7 +17,7 @@ const SimpleMap = (props) => {
      <MapsComponent
         id="maps"
         theme="FabricDark"
-        centerPosition={{ latitude: 18.516726, longitude: 73.856255 }}
+        centerPosition={{ latitude: 23.795399 , longitude: 86.427040 }}
         zoomSettings={{
           enable: true,
           zoomFactor: 12,
@@ -30,8 +30,8 @@ const SimpleMap = (props) => {
           <MarkersDirective>
                             <MarkerDirective visible={true} height={20} width={15} dataSource={[
     {
-        latitude: 18.516726,
-        longitude: 73.856255,
+        latitude: 23.795399,
+        longitude: 86.427040,
     },
    ]}>
                             </MarkerDirective>
