@@ -4,7 +4,7 @@ import TyrePressure from "./TyrePressure";
 
 const TyrePressureSection = (props) => {
   let pressureData = props.pressureData
-  let factoryPressure = props.factoryPressure
+  let factoryPressure = props.factoryPressure || 40
   return (
     <>
       <Paper elevation={6} className="container" sx={{ height: 300 }}>
